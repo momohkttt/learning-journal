@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "source-sans-pro", sans-serif;
+}
+
+header {
+    min-height: 60px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-left,
+.menu-right {
+    display: flex;
+    align-items: center;
+}
+
+.menu-left {
+    gap: 0.2em;
+}
+
+.menu-right {
+    gap: 1em;
+    color: #090909;
+}
+
+.date, 
+.menu-right {
+    font-size: 0.75rem;
+}
+
+.logo {
+    width: 25px;
+    color: #0E0E0E;  
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+p
+ {
+    margin: 1em 0;
+    line-height: 1.5;
+}
+
+.main-article {
+    background-image: url("/images/article-image-hero.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 293px;
+    color: #FFF;
+    padding: 6em 2em 1em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.blog-img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.article-date {
+    font-size: 0.875rem;
+}
+
+h2 {
+    margin: 1rem 0;
+    color: #141414;
+}
+
+.blog-text {
+    color: #505050;
+}
+
+.view-more,
+.footer {
+   text-align: center;
+   font-weight: 700;
+}
+
+footer {
+   text-align: center; 
+   background-color: #202020;
+   padding: 2em;
+   min-height: 105px;
+}
+
+
+.view-more {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.footer {
+    color: #ECECEC;
+    margin-bottom: 0;
+}
+
+.copyright {
+    color: #D7D7D7;
+    margin-top: 0;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .menu-right {
+        font-size: 1rem;
+    }
+    
+    .logo-text {
+        font-size: 1.25rem;
+    }
+    
+    .hidden {
+        display: block;
+    }
+    
+    footer {
+        font-size: 0.75rem;
+    }
+    
+    .view-more {
+        display: none;
+    }
+    
+    .articles {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.625em;
+        margin-bottom: 1em;
+    }
+}
