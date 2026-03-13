@@ -15,16 +15,24 @@ body {
     max-width: 980px;
 }
 
+nav  {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
 
 ul {
     list-style-type: none;
     margin: auto 0;
 }
 
-nav  {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 0;
+a {
+    text-decoration: none;
+}
+
+.menu-right a {
+    text-transform: uppercase;
+    color: #090909;
 }
 
 .menu-left,
@@ -36,6 +44,13 @@ nav  {
 
 .menu-left {
     gap: 0.2em;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #0E0E0E;
+}
+
+.logo {
+    width: 2em;
 }
 
 .menu-right {
@@ -47,16 +62,6 @@ nav  {
 .date, 
 .menu-right {
     font-size: 0.75rem;
-}
-
-.logo {
-    width: 2em;
-    color: #0E0E0E;  
-}
-
-.logo-text {
-    font-weight: 700;
-    font-size: 0.85rem;
 }
 
 h1 {
