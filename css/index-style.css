@@ -9,18 +9,14 @@ body {
     font-family: "source-sans-pro", sans-serif;
 }
 
-header {
-    min-height: 60px;
-}
-
 header ul {
     list-style-type: none;
-    padding: 1em;
 }
 
-nav {
+nav .container {
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 
 .menu-left,
@@ -80,7 +76,7 @@ p
 .container {
     width: 90%;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 980px;
 }
 
 .blog-img {

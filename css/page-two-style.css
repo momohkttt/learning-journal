@@ -64,11 +64,9 @@ p
 }
 
 .main-article {
-    min-height: 293px;
-    padding: 6em 2em 1em;
-    display: flex;
+    /* padding: 2em 1em; */
     flex-direction: column;
-    margin-bottom: 3em;
+    /* margin-bottom: 3em; */
     justify-content: center;
 }
 
