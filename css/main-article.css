@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "source-sans-pro", sans-serif;
+}
+
+main {
+    background-color: #FAFAFA;
+}
+
+.container {
+    width: 92.5%;
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+nav  {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-right a {
+    text-transform: uppercase;
+    color: #090909;
+}
+
+.menu-left,
+.menu-right {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.menu-left {
+    gap: 0.2em;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #0E0E0E;
+}
+
+.logo {
+    width: 2em;
+}
+
+.menu-right {
+    gap: 3em;
+    color: #090909;
+    font-weight: 600
+}
+
+.date, 
+.menu-right {
+    font-size: 0.75rem;
+}
+
+.main-article-header {
+    padding-top: 3em;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 1rem 0;
+    color: #141414;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p
+ {
+    line-height: 1.5;
+}
+
+.main-article-img {
+    width: 100%;
+}
+
+
+.blog-img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.article-date {
+    font-size: 0.875rem;
+}
+
+.recent-posts {
+    margin-top: 3em;
+}
+
+.blog-text {
+    color: #505050;
+}
+
+.view-more,
+.footer {
+   font-weight: 700;
+}
+
+footer {
+   background-color: #202020;
+   padding: 2em;
+   min-height: 105px;
+}
+
+
+.view-more {
+    text-decoration: underline;
+}
+
+.footer {
+    color: #ECECEC;
+    margin-bottom: 0;
+}
+
+.copyright {
+    color: #D7D7D7;
+    margin-top: 0;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hidden {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .menu-right {
+        font-size: 1rem;
+        gap: 2em;
+    }
+    
+    .logo-text {
+        font-size: 1.25rem;
+    }
+    
+    .hidden {
+        display: block;
+    }
+    
+    footer {
+        font-size: 0.75rem;
+    
+    }
+    
+    .view-more {
+        display: none;
+    }
+    
+    .articles {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.625em;
+        margin-bottom: 1em;
+    }
+}
