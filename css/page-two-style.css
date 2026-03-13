@@ -9,24 +9,29 @@ body {
     font-family: "source-sans-pro", sans-serif;
 }
 
-header {
-    min-height: 60px;
+.container {
+    width: 92.5%;
+    margin: 0 auto;
+    max-width: 980px;
 }
 
-header ul {
+
+ul {
     list-style-type: none;
-    padding: 1em;
+    margin: auto 0;
 }
 
-nav {
+nav  {
     display: flex;
     justify-content: space-between;
+    padding: 1em 0;
 }
 
 .menu-left,
 .menu-right {
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 .menu-left {
@@ -34,8 +39,9 @@ nav {
 }
 
 .menu-right {
-    gap: 1em;
+    gap: 3em;
     color: #090909;
+    font-weight: 600
 }
 
 .date, 
@@ -44,7 +50,7 @@ nav {
 }
 
 .logo {
-    width: 25px;
+    width: 2em;
     color: #0E0E0E;  
 }
 
@@ -59,22 +65,23 @@ h1 {
 
 p
  {
-    margin: 1em 0;
     line-height: 1.5;
 }
 
 .main-article {
-    /* padding: 2em 1em; */
+    background-image: url("/images/article-image-hero.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 293px;
+    color: #FFF;
+    padding-top: 6em;
+    display: flex;
     flex-direction: column;
-    /* margin-bottom: 3em; */
+    margin-bottom: 3em;
     justify-content: center;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 800px;
-}
 
 .blog-img {
     width: 100%;
@@ -148,7 +155,7 @@ footer {
     .hidden {
         display: block;
     }
-       
+    
     footer {
         font-size: 0.75rem;
     }

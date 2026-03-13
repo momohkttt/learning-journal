@@ -9,20 +9,29 @@ body {
     font-family: "source-sans-pro", sans-serif;
 }
 
-header ul {
-    list-style-type: none;
+.container {
+    width: 92.5%;
+    margin: 0 auto;
+    max-width: 980px;
 }
 
-nav .container {
+
+ul {
+    list-style-type: none;
+    margin: auto 0;
+}
+
+nav  {
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    padding: 1em 0;
 }
 
 .menu-left,
 .menu-right {
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 .menu-left {
@@ -30,8 +39,9 @@ nav .container {
 }
 
 .menu-right {
-    gap: 1em;
+    gap: 3em;
     color: #090909;
+    font-weight: 600
 }
 
 .date, 
@@ -40,7 +50,7 @@ nav .container {
 }
 
 .logo {
-    width: 25px;
+    width: 2em;
     color: #0E0E0E;  
 }
 
@@ -55,7 +65,6 @@ h1 {
 
 p
  {
-    margin: 1em 0;
     line-height: 1.5;
 }
 
@@ -66,18 +75,13 @@ p
     background-repeat: no-repeat; 
     min-height: 293px;
     color: #FFF;
-    padding: 6em 2em 1em;
+    padding-top: 6em;
     display: flex;
     flex-direction: column;
     margin-bottom: 3em;
     justify-content: center;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 980px;
-}
 
 .blog-img {
     width: 100%;
