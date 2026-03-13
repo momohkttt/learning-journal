@@ -9,6 +9,10 @@ body {
     font-family: "source-sans-pro", sans-serif;
 }
 
+main {
+    background-color: #FAFAFA;
+}
+
 .container {
     width: 92.5%;
     margin: 0 auto;
@@ -64,8 +68,21 @@ a {
     font-size: 0.75rem;
 }
 
+.main-article-header {
+    padding-top: 3em;
+}
+
 h1 {
     margin: 0;
+}
+
+h2 {
+    margin: 1rem 0;
+    color: #141414;
+}
+
+h3 {
+    font-size: 1rem;
 }
 
 p
@@ -73,18 +90,8 @@ p
     line-height: 1.5;
 }
 
-.main-article {
-    background-image: url("/images/article-image-hero.jpg");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    min-height: 293px;
-    color: #FFF;
-    padding-top: 6em;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3em;
-    justify-content: center;
+.main-article-img {
+    width: 100%;
 }
 
 
@@ -97,9 +104,8 @@ p
     font-size: 0.875rem;
 }
 
-h2 {
-    margin: 1rem 0;
-    color: #141414;
+.recent-posts {
+    margin-top: 3em;
 }
 
 .blog-text {
@@ -108,12 +114,10 @@ h2 {
 
 .view-more,
 .footer {
-   text-align: center;
    font-weight: 700;
 }
 
 footer {
-   text-align: center; 
    background-color: #202020;
    padding: 2em;
    min-height: 105px;
@@ -122,7 +126,6 @@ footer {
 
 .view-more {
     text-decoration: underline;
-    text-align: center;
 }
 
 .footer {
@@ -144,6 +147,11 @@ footer {
     display: none;
 }
 
+.center {
+    text-align: center;
+}
+
+
 @media (min-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -151,6 +159,7 @@ footer {
     
     .menu-right {
         font-size: 1rem;
+        gap: 2em;
     }
     
     .logo-text {
@@ -163,6 +172,7 @@ footer {
     
     footer {
         font-size: 0.75rem;
+    
     }
     
     .view-more {

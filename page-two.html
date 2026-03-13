@@ -14,199 +14,39 @@
                         <li class="logo-text">My learning journal</li>
                     </ul>
                     <ul class="menu-right">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about-me.html"></a>ABOUT ME</li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="about-me.html">ABOUT ME</a></li>
                     </ul>
                 </nav>  
-             </div>     * {
-    box-sizing: border-box;
-}
+             </div> 
 
-html, 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "source-sans-pro", sans-serif;
-}
-
-.container {
-    width: 92.5%;
-    margin: 0 auto;
-    max-width: 980px;
-}
-
-nav  {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: auto 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-.menu-right a {
-    text-transform: uppercase;
-    color: #090909;
-}
-
-.menu-left,
-.menu-right {
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-
-.menu-left {
-    gap: 0.2em;
-    font-weight: 700;
-    font-size: 0.85rem;
-    color: #0E0E0E;
-}
-
-.logo {
-    width: 2em;
-}
-
-.menu-right {
-    gap: 3em;
-    color: #090909;
-    font-weight: 600
-}
-
-.date, 
-.menu-right {
-    font-size: 0.75rem;
-}
-
-h1 {
-    margin: 0;
-}
-
-p
- {
-    line-height: 1.5;
-}
-
-.main-article {
-    background-image: url("/images/article-image-hero.jpg");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    min-height: 293px;
-    color: #FFF;
-    padding-top: 6em;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3em;
-    justify-content: center;
-}
-
-
-.blog-img {
-    width: 100%;
-    border-radius: 3px;
-}
-
-.article-date {
-    font-size: 0.875rem;
-}
-
-h2 {
-    margin: 1rem 0;
-    color: #141414;
-}
-
-.blog-text {
-    color: #505050;
-}
-
-.view-more,
-.footer {
-   text-align: center;
-   font-weight: 700;
-}
-
-footer {
-   text-align: center; 
-   background-color: #202020;
-   padding: 2em;
-   min-height: 105px;
-}
-
-
-.view-more {
-    text-decoration: underline;
-    text-align: center;
-}
-
-.footer {
-    color: #ECECEC;
-    margin-bottom: 0;
-}
-
-.copyright {
-    color: #D7D7D7;
-    margin-top: 0;
-}
-
-.articles {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.hidden {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    
-    .menu-right {
-        font-size: 1rem;
-    }
-    
-    .logo-text {
-        font-size: 1.25rem;
-    }
-    
-    .hidden {
-        display: block;
-    }
-    
-    footer {
-        font-size: 0.75rem;
-    }
-    
-    .view-more {
-        display: none;
-    }
-    
-    .articles {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.625em;
-        margin-bottom: 1em;
-    }
-}
         </header>
         
         <main>
             <div class="main-article">
                 <div class="container">
-                    <p class="main-date">JULY 23, 2022</p>
-                    <h1>My new journey as a bootcamp student.</h1>
-                    <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+                    <div class="main-article-header"></div>
+                        <p class="main-date">JULY 23, 2022</p>
+                        <h1>My new journey as a bootcamp student.</h1>
+                        <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+
+                        <img class="main-article-img" src="images/article-image-hero.jpg">
+
+
+
+                        <h3>How I stay committed to learning</h3>
+                        <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.<br>
+                        While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey with the world.</p>
+                        <h3>How I got started</h3>
+                        <p>I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words.
+                        <br>
+                        That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.</p>
+                    </div>
                 </div>
             </div>
             
             <div class="container">
+                <h3 class="center recent-posts">Recent posts</h3>
                 <div class="articles">
                     <article class="article article-1">
                         <img class="blog-img" src="/images/blog1.jpg">
@@ -227,34 +67,13 @@ footer {
                         <p class="article-date">JULY 23, 2022</p>
                         <h2>Blog three</h2>
                         <p class="blog-text">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
-                    </article>
-                    
-                    <article class="article article-4 hidden">
-                        <img class="blog-img" src="/images/blog4.jpg">
-                        <p class="article-date">JULY 23, 2022</p>
-                        <h2>Blog four</h2>
-                        <p class="blog-text">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
-                    </article>
-                    
-                    <article class="article article-5 hidden">
-                        <img class="blog-img" src="/images/blog5.jpg">
-                        <p class="article-date">JULY 23, 2022</p>
-                        <h2>Blog five</h2>
-                        <p class="blog-text">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
-                    </article>
-                    
-                    <article class="article article-6 hidden">
-                        <img class="blog-img" src="/images/blog6.jpg">
-                        <p class="article-date">JULY 23, 2022</p>
-                        <h2>Blog six</h2>
-                        <p class="blog-text">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
-                    </article>
+                    </article>  
                 </div>
-                <p class="view-more">View More</p>
+                <p class="view-more center">View More</p>
             </div>
         </main>
         
-        <footer>
+        <footer class="center">
             <p class="footer">My Learning Journal</p>
             <p class="copyright">Copyright ©2026</p>
         </footer>
