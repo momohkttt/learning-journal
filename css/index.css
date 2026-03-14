@@ -152,6 +152,7 @@ footer {
     
     .menu-right {
         font-size: 1rem;
+        gap: 2em;
     }
     
     .logo-text {
