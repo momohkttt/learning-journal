@@ -180,4 +180,8 @@ footer {
         gap: 1.625em;
         margin-bottom: 1em;
     }
+
+    p {
+        font-size: 1.2rem;
+    }
 }

@@ -198,14 +198,19 @@ footer {
 
     .main-article-container {
     width: 90%;
-    margin: 0 auto;}
+    margin: 0 auto;
+    }
     
     .author-info {
         flex-direction: row;
     }
+
     .author-info-text {
         flex-direction: column;
     }
 
+    p {
+        font-size: 1.2rem;
+    }
 
 }
